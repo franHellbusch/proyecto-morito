@@ -208,10 +208,19 @@
 }
 
 .contacto-imgs {
+    z-index: 1;
     width: 500px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+}
+
+.contacto-backgorund-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contacto-background-icons {
@@ -327,7 +336,195 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1400px) and (min-width: 1144px) {
+    .sobre_mi-content {
+        padding: 5% 7%;
+    }
+
+    /* info pago */
+    .info_pago {
+        height: 200px;
+    }
+
+    .info_pago-messages>h6 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .info_pago-messages>p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .info_pago-bars {
+        width: 3px;
+        margin: 20px;
+    }
+
+    /* contacto */
+    .contacto {
+        padding: 30px 0;
+        justify-content: space-between;
+    }
+
+    .contacto-formulario-container {
+        margin: 0 30px;
+        z-index: 1;
+    }
+
+    .contacto-background-icons {
+        display: none;
+    }
+}
+
+@media (max-width: 1144px) and (min-width: 760px) {
+    .sobre_mi-img {
+        width: 50%;
+    }
+
+    .sobre_mi-title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .sobre_mi-content {
+        padding: 20px;
+    }
+
+    .sobre_mi-content>h4 {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 28px;
+        align-self: center;
+    }
+
+    .sobre_mi-content>p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* info pago */
+    .info_pago {
+        height: 150px;
+    }
+
+    .info_pago-puntos-marrones {
+        z-index: -1;
+        left: 45%;
+        position: absolute;
+        top: -20px;
+    }
+
+    .info_pago-messages-container {
+        align-self: center;
+        width: 25%;
+        flex-direction: column;
+    }
+
+    .info_pago-messages {
+        text-align: center;
+        margin: 0;
+    }
+
+    .info_pago-messages>h6 {
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .info_pago-messages>p {
+        display: none;
+    }
+
+    .info_pago-bars {
+        width: 3px;
+        height: 60px;
+        background: #1F1F1F;
+        margin: 20px;
+    }
+
+    /* contacto */
+    .contacto {
+        justify-content: center;
+    }
+
+    .contacto-formulario-container {
+        margin: 0;
+    }
+
+    .contacto-imgs {
+        display: none;
+    }
+
+    .contacto-background-icons>img {
+        width: 120px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 35px 20px;
+    }
+
+    .footer-logo {
+        width: 170px;
+    }
+
+    .footer-links>h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .footer-links>a {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .news-letter>h6 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .news-letter>p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .news-letter>input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 760px) {
+    .sobre_mi-title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .sobre_mi-content>h4 {
+        font-size: 15px;
+        line-height: 22px;
+        margin: 5px 0;
+    }
+
+    .sobre_mi-content>p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 760px) {
     .sobre_mi {
         flex-direction: column;
     }
@@ -407,7 +604,7 @@
     }
 
     .contacto-title {
-        font-size: 32px;
+        font-size: 28px;
         text-align: center;
         margin-bottom: 0;
     }
@@ -421,20 +618,25 @@
         font-size: 12px;
     }
 
+    .input-group {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     .input-group>input {
         font-size: 11px;
         line-height: 24px;
-        width: 160px;
+        width: 43%;
         height: 24px;
-        padding: 0 5px;
+        padding: 0 4px;
         margin: 5px 5px;
     }
 
     .contacto-formulario>textarea {
         font-size: 11px;
-        padding: 5px;
+        padding: 6px;
         margin: 5px;
-        width: 343px;
+        width: 92%;
         height: 88px;
     }
 
@@ -450,6 +652,14 @@
     }
 
     .contacto-imgs {
+        display: none;
+    }
+
+    .contacto-backgorund-image {
+        display: none;
+    }
+
+    .contacto-background-icons {
         display: none;
     }
 
