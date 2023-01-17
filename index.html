@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morito</title>
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
+    <header>
+        <div class="logo-header"></div>
+        <nav class="nav-header">
+            <button>PRODUCTOS</button>
+            <button>¿CÓMO COMPRAR?</button>
+            <button>SOBRE MÍ</button>
+            <button>CONTACTO</button>
+            <button>MI TIENDA</button>
+        </nav>
+        <div class="menu-display"></div>
+    </header>
+    <section class="buyNow">
+        <div class="buyNow-img1"></div>
+        <div class="buyNow-img2"></div>
+        <div class="buyNow-text"></div>
+        <div class="buyNow-button"><span>COMPRA AHORA</span></div>
+    </section>
+    <section class="products-list">
+        <div class="list-header">
+            <h2>Nuestros Productos</h2>
+        </div>
+        <section class="list">
+            <div class="dec-1"></div>
+            <div class="pr product-1"></div>
+            <div class="pr product-2"></div>
+            <div class="pr product-3"></div>
+            <div class="pr product-4"></div>
+            <div class="pr product-5"></div>
+            <div class="pr product-6"></div>
+            <div class="dec-2"></div>
+            <div class="dec-3"></div>
+            <div class="pr product-7"></div>
+            <div class="pr product-8"></div>
+            <div class="pr product-9"></div>
+            <div class="pr product-10"></div>
+            <div class="pr product-11"></div>
+            <div class="pr product-12"></div>
+            <div class="dec-4"></div>
+        </section>    
+    </section>
+    <section class="howBuy">
+        <h2>¿Cómo comprar?</h2>
+        <div class="hb-img"></div>
+        <div class="hb-vector1"></div>
+        <div class="hb-vector2"></div>
+    </section>
+
     <!-- SOBRE MI -->
     <section class="sobre_mi">
-        <img class="sobre_mi-img" src="./assets/Rectangle 73.jpg" alt="sobre_mi-image">
+        <img class="sobre_mi-img" src="./img/Rectangle 73.jpg" alt="sobre_mi-image">
         <aside class="sobre_mi-content">
             <h3 class="sobre_mi-title">Sobre mí</h3>
             <p>Morito es un emprendimiento de comercialización de ropa de bebés de 0 a 24 meses. El enfoque principal de
@@ -76,9 +111,9 @@
     </section>
     <aside class="info_pago">
         <div class="info_pago-background">
-            <img src="./assets/puntos-blancos.png" alt="background-img">
-            <img class="info_pago-puntos-marrones" src="./assets/puntos-marrones.png" alt="background-img">
-            <img src="./assets/resorte.png" alt="background-img">
+            <img src="./img/puntos-blancos.png" alt="background-img">
+            <img class="info_pago-puntos-marrones" src="./img/puntos-marrones.png" alt="background-img">
+            <img src="./img/resorte.png" alt="background-img">
         </div>
         <span class="info_pago-messages-container">
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,12 +153,12 @@
     <!-- contacto -->
     <section class="contacto">
         <div class="contacto-backgorund-image">
-            <img src="./assets/contacto-background-rectangulo.png" alt="contacto-background-rectangulo">
-            <img src="./assets/contacto-background-radio.png" alt="contacto-background-radio">         
+            <img src="./img/contacto-background-rectangulo.png" alt="contacto-background-rectangulo">
+            <img src="./img/contacto-background-radio.png" alt="contacto-background-radio">         
         </div>
         <div class="contacto-background-icons">
-            <img class="puntos-contacto" src="./assets/puntos-contacto.png" alt="puntos-contacto">
-            <img class="mancha-contacto" src="./assets/mancha.png" alt="mancha-contacto">             
+            <img class="puntos-contacto" src="./img/puntos-contacto.png" alt="puntos-contacto">
+            <img class="mancha-contacto" src="./img/mancha.png" alt="mancha-contacto">             
         </div>
         <div class="contacto-formulario-container">
             <h4 class="contacto-title">Dejanos tu consulta</h4>
@@ -153,16 +188,16 @@
         </div>
         
         <aside class="contacto-imgs">
-            <img src="./assets/contacto-1.jpg" alt="contaco-img-1">
-            <img src="./assets/contacto-2.jpg" alt="contaco-img-2">
-            <img src="./assets/contacto-3.jpg" alt="contaco-img-3">
-            <img src="./assets/contacto-4.jpg" alt="contaco-img-4">
+            <img src="./img/contacto-1.jpg" alt="contaco-img-1">
+            <img src="./img/contacto-2.jpg" alt="contaco-img-2">
+            <img src="./img/contacto-3.jpg" alt="contaco-img-3">
+            <img src="./img/contacto-4.jpg" alt="contaco-img-4">
         </aside>
     </section>
 
     <!-- footer -->
     <footer class="footer">
-        <img class="footer-logo" src="./assets/logo-footer.png" alt="logo-footer">
+        <img class="footer-logo" src="./img/logo-footer.png" alt="logo-footer">
 
         <div class="footer-links">
             <h5>Nosotros</h5>
@@ -204,5 +239,4 @@
         </div>
     </footer>
 </body>
-
 </html>
