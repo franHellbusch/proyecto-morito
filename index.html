@@ -5,50 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morito</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- css -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <div class="logo-header"></div>
         <nav class="nav-header">
-            <button>PRODUCTOS</button>
-            <button>¿CÓMO COMPRAR?</button>
-            <button>SOBRE MÍ</button>
-            <button>CONTACTO</button>
-            <button>MI TIENDA</button>
+            <a href="#nuestrosProductos">PRODUCTOS</a>
+            <a href="#comoComprar">¿CÓMO COMPRAR?</a>
+            <a href="#sobreMi">SOBRE MÍ</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="#footer">MI TIENDA</a>
         </nav>
-        <div class="menu-display"></div>
+        <div id="menu-display" onclick="openMenu()" class="menu-display"></div>
     </header>
+    <section id="menu-burguer" class="menu-burguer-bg">
+        <div class="menu-burguer">
+            <div class="close-menu" onclick="closeMenu()"></div>
+            <ul>
+                <li>PRODUCTOS</li>
+                <li>¿CÓMO COMPRAR?</li>
+                <li>SOBRE MÍ</li>
+                <li>CONTACTO</li>
+                <li>MI TIENDA</li>
+            </ul>
+        </div>
+    </section>
     <section class="buyNow">
         <div class="buyNow-img1"></div>
         <div class="buyNow-img2"></div>
         <div class="buyNow-text"></div>
-        <div class="buyNow-button"><span>COMPRA AHORA</span></div>
+        <button class="buyNow-button">COMPRA AHORA</button>
     </section>
-    <section class="products-list">
+    <section id="nuestrosProductos" class="products-list">
         <div class="list-header">
-            <h2>Nuestros Productos</h2>
+            <h2>Nuestros productos</h2>
         </div>
         <section class="list">
-            <div class="dec-1"></div>
-            <div class="pr product-1"></div>
-            <div class="pr product-2"></div>
-            <div class="pr product-3"></div>
-            <div class="pr product-4"></div>
-            <div class="pr product-5"></div>
-            <div class="pr product-6"></div>
-            <div class="dec-2"></div>
-            <div class="dec-3"></div>
-            <div class="pr product-7"></div>
-            <div class="pr product-8"></div>
-            <div class="pr product-9"></div>
-            <div class="pr product-10"></div>
-            <div class="pr product-11"></div>
-            <div class="pr product-12"></div>
-            <div class="dec-4"></div>
+            <div class="section-pr-1">
+                <div class="dec-1"></div>
+                <div class="pr product-1"></div>
+                <div class="pr product-2"></div>
+                <div class="pr product-3"></div>
+                <div class="pr product-4"></div>
+                <div class="pr product-5"></div>
+                <div class="pr product-6"></div>
+                <div class="dec-2"></div>
+            </div>
+            <div class="section-pr-2">
+                <div class="dec-3"></div>
+                <div class="pr product-7"></div>
+                <div class="pr product-8"></div>
+                <div class="pr product-9"></div>
+                <div class="pr product-10"></div>
+                <div class="pr product-11"></div>
+                <div class="pr product-12"></div>
+                <div class="dec-4"></div>
+            </div>
+            
         </section>    
     </section>
-    <section class="howBuy">
+    <section id="comoComprar" class="howBuy">
         <h2>¿Cómo comprar?</h2>
         <div class="hb-img"></div>
         <div class="hb-vector1"></div>
@@ -56,7 +83,7 @@
     </section>
 
     <!-- SOBRE MI -->
-    <section class="sobre_mi">
+    <section id="sobreMi" class="sobre_mi">
         <img class="sobre_mi-img" src="./img/Rectangle 73.jpg" alt="sobre_mi-image">
         <aside class="sobre_mi-content">
             <h3 class="sobre_mi-title">Sobre mí</h3>
@@ -151,7 +178,7 @@
     </aside>
 
     <!-- contacto -->
-    <section class="contacto">
+    <section id="contacto" class="contacto">
         <div class="contacto-backgorund-image">
             <img src="./img/contacto-background-rectangulo.png" alt="contacto-background-rectangulo">
             <img src="./img/contacto-background-radio.png" alt="contacto-background-radio">         
@@ -196,7 +223,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <img class="footer-logo" src="./img/logo-footer.png" alt="logo-footer">
 
         <div class="footer-links">
@@ -239,4 +266,24 @@
         </div>
     </footer>
 </body>
+<script>
+
+    function openMenu(){
+        let menu = document.getElementById("menu-burguer")
+        menu.style.transform = 'translateX(0)'
+        
+        
+    }
+
+    function closeMenu(){
+        let menu = document.getElementById("menu-burguer")
+        menu.style.transform = 'translateX(100%)'
+    }
+
+
+
+
+
+    
+</script>
 </html>
