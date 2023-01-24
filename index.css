@@ -2,7 +2,7 @@
     display: none;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -10,12 +10,12 @@
     scroll-behavior: smooth;
 }
 
-header{
+header {
     height: 88px;
     width: 100%;
     background-color: #F8F8F8;
     position: relative;
-    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,14 +24,14 @@ header{
     top: 0;
 }
 
-.logo-header{
+.logo-header {
     position: absolute;
     background-image: url(img/Logo\ +\ área.svg);
     background-position: center;
     background-size: cover;
 }
 
-.nav-header{
+.nav-header {
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@ header{
     height: 100%;
 }
 
-.nav-header a{
+.nav-header a {
     text-decoration: none;
     color: #1F1F1F;
     background-color: transparent;
@@ -64,7 +64,7 @@ header{
 }
 
 
-.buyNow{
+.buyNow {
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -73,7 +73,7 @@ header{
     margin-top: 88px;
 }
 
-.buyNow-text{
+.buyNow-text {
     position: absolute;
     background-position: center;
     background-size: contain;
@@ -81,7 +81,7 @@ header{
     z-index: 3;
 }
 
-.buyNow-button{
+.buyNow-button {
     border-radius: 8px;
     background-color: #1F1F1F;
     display: flex;
@@ -108,18 +108,18 @@ header{
 }
 
 @media screen and (min-width:0px) {
-    .logo-header{
+    .logo-header {
         position: relative;
         height: 40px;
         width: 120px;
     }
 
-    .nav-header{
+    .nav-header {
         display: none;
         margin-left: 140px;
     }
 
-    .nav-header a{
+    .nav-header a {
         text-decoration: none;
         color: #1F1F1F;
         display: none;
@@ -130,7 +130,7 @@ header{
         font-weight: 600;
     }
 
-    .menu-burguer-bg{
+    .menu-burguer-bg {
         display: flex;
         height: 100vh;
         width: 237px;
@@ -144,10 +144,10 @@ header{
         right: 0;
         position: fixed;
         transform: translateX(100%);
-        transition: all 1s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
-    .menu-burguer-bg .menu-burguer{
+    .menu-burguer-bg .menu-burguer {
         width: 100%;
         height: 100vh;
         background-color: #fff;
@@ -156,7 +156,7 @@ header{
         transition: all .2s ease-in;
     }
 
-    .menu-burguer-bg .menu-burguer ul{
+    .menu-burguer-bg .menu-burguer ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -167,7 +167,7 @@ header{
         list-style: none;
     }
 
-    .menu-burguer-bg .menu-burguer ul li{
+    .menu-burguer-bg .menu-burguer ul li {
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
         font-weight: 600;
@@ -178,7 +178,7 @@ header{
         cursor: pointer;
     }
 
-    .menu-display{
+    .menu-display {
         height: 48px;
         width: 48px;
         position: absolute;
@@ -191,7 +191,7 @@ header{
         cursor: pointer;
     }
 
-    .menu-burguer-bg .close-menu{
+    .menu-burguer-bg .close-menu {
         position: absolute;
         width: 48px;
         height: 48px;
@@ -208,20 +208,22 @@ header{
         border-radius: 10px;
     }
 
-    .dec-1, .dec-3 {
+    .dec-1,
+    .dec-3 {
         border-radius: 0 10px 10px 0;
     }
 
-    .dec-2, .dec-4 {
+    .dec-2,
+    .dec-4 {
         border-radius: 10px 0 0 10px;
     }
 
-    .buyNow{
+    .buyNow {
         height: 224px;
         background-image: url('img/Group\ 14-mob.svg');
     }
 
-    .buyNow-text{
+    .buyNow-text {
         width: 105px;
         height: 52px;
         left: 16px;
@@ -229,7 +231,7 @@ header{
         background-image: url('img/Regala\ algo\ único-mob.svg')
     }
 
-    .buyNow-button{
+    .buyNow-button {
         left: 16px;
         top: 90px;
         width: 115px;
@@ -238,7 +240,7 @@ header{
         border: 0;
     }
 
-    .howBuy{
+    .howBuy {
         height: 696px;
         width: 100%;
         background-color: #EEDBA8;
@@ -251,7 +253,7 @@ header{
         flex-direction: column;
     }
 
-    .hb-vector1{
+    .hb-vector1 {
         position: absolute;
         background-image: url(img/Subtract.svg);
         width: 188px;
@@ -263,7 +265,7 @@ header{
         background-repeat: no-repeat;
     }
 
-    .hb-vector2{
+    .hb-vector2 {
         position: absolute;
         background-image: url(img/Subtract2.svg);
         width: 208px;
@@ -275,7 +277,7 @@ header{
         background-repeat: no-repeat;
     }
 
-    .hb-img{
+    .hb-img {
         margin-top: 10px;
         width: 91%;
         height: 82%;
@@ -286,7 +288,7 @@ header{
         z-index: 2;
     }
 
-    .howBuy h2{
+    .howBuy h2 {
         font-family: 'Playfair Display', serif;
         font-style: normal;
         font-weight: 600;
@@ -296,23 +298,23 @@ header{
         margin-bottom: 30px;
     }
 
-    
+
 }
 
 @media screen and (min-width:240px) {
-    .howBuy h2{
+    .howBuy h2 {
         font-size: 32px;
     }
 }
 
 @media screen and (min-width:360px) {
 
-    .buyNow{
+    .buyNow {
         height: 360px;
         background-image: url('img/Group\ 14-mob.svg');
     }
 
-    .buyNow-text{
+    .buyNow-text {
         width: 150px;
         height: 90px;
         left: 30px;
@@ -320,7 +322,7 @@ header{
         background-image: url('img/Regala\ algo\ único-mob.svg')
     }
 
-    .buyNow-button{
+    .buyNow-button {
         left: 30px;
         top: 145px;
         width: 150px;
@@ -328,7 +330,7 @@ header{
         font-size: 12px;
     }
 
-    .howBuy{
+    .howBuy {
         height: 348px;
         width: 100%;
         background-image: url(img/Bg\ Como\ comprar.png);
@@ -344,15 +346,15 @@ header{
         flex-direction: column;
     }
 
-    .hb-vector1{
+    .hb-vector1 {
         display: none;
     }
 
-    .hb-vector2{
+    .hb-vector2 {
         display: none;
     }
-    
-    .hb-img{
+
+    .hb-img {
         margin-top: 10px;
         width: 360px;
         height: 130px;
@@ -362,8 +364,8 @@ header{
         background-image: url(img/Group\ 32-tab.svg);
         z-index: 2;
     }
-    
-    .howBuy h2{
+
+    .howBuy h2 {
         font-family: 'Playfair Display', serif;
         font-style: normal;
         font-weight: 600;
@@ -376,12 +378,12 @@ header{
 
 @media screen and (min-width:482px) {
 
-    .buyNow{
+    .buyNow {
         height: 303px;
         background-image: url('img/Group\ 14-tab.svg');
     }
 
-    .buyNow-img1{
+    .buyNow-img1 {
         position: absolute;
         right: 0;
         bottom: -70px;
@@ -393,8 +395,8 @@ header{
         background-repeat: no-repeat;
         z-index: 1;
     }
-    
-    .buyNow-img2{
+
+    .buyNow-img2 {
         position: absolute;
         right: -170px;
         top: -10px;
@@ -411,14 +413,14 @@ header{
 
 @media screen and (min-width:665px) {
 
-    .buyNow-text{
+    .buyNow-text {
         width: 150px;
         height: 90px;
         left: 60px;
         top: 70px;
     }
 
-    .buyNow-button{
+    .buyNow-button {
         left: 60px;
         top: 165px;
         width: 150px;
@@ -426,31 +428,31 @@ header{
     }
 }
 
-@media  screen and (min-width: 720px) {
+@media screen and (min-width: 720px) {
 
-    .buyNow-text{
+    .buyNow-text {
         width: 228px;
         height: 101px;
         left: 130px;
         top: 66px;
     }
 
-    .buyNow-button{
+    .buyNow-button {
         width: 213px;
         height: 32px;
         left: 139px;
         top: 184px;
     }
 
-    .products-list{
+    .products-list {
         height: auto;
         width: 100%;
         background-color: #F8F8F8;
         display: flex;
         flex-direction: column;
     }
-    
-    .list-header{
+
+    .list-header {
         height: auto;
         padding-top: 20px;
         padding-left: 32px;
@@ -462,18 +464,18 @@ header{
         z-index: 3;
         color: #1F1F1F;
     }
-    
-    .list-header h2{
+
+    .list-header h2 {
         font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 600;
         font-size: 33px;
         line-height: 72px;
     }
-    
-    .list{
+
+    .list {
         overflow: hidden;
-        height: calc(100% - 82px);
+        height: calc(100% - 200px);
         background-color: #F8F8F8;
         width: 100%;
         display: flex;
@@ -486,7 +488,7 @@ header{
         margin-bottom: 20px;
     }
 
-    .section-pr-1{
+    .section-pr-1 {
         height: 50%;
         width: 100%;
         display: grid;
@@ -496,7 +498,7 @@ header{
         grid-row-gap: 15px;
     }
 
-    .section-pr-2{
+    .section-pr-2 {
         height: 50%;
         width: 100%;
         display: grid;
@@ -505,12 +507,63 @@ header{
         grid-template-rows: 104px 104px;
         grid-row-gap: 15px;
     }
-    
-    .list .pr{
+
+    .list .pr {
         background-color: aqua;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    
-    .list .dec-1{
+
+    .product-1 {
+        background-image: url(products-img/muñeco-1.jpg);
+    }
+
+    .product-2 {
+        background-image: url(products-img/muñeco-2.jpg);
+    }
+
+    .product-3 {
+        background-image: url(products-img/muñeco-3.jpg);
+    }
+
+    .product-4 {
+        background-image: url(products-img/muñeco-4.jpg);
+    }
+
+    .product-5 {
+        background-image: url(products-img/muñeco-5.jpg);
+    }
+
+    .product-6 {
+        background-image: url(products-img/muñeco-6.jpg);
+    }
+
+    .product-7 {
+        background-image: url(products-img/ropita-1.jpg);
+    }
+
+    .product-8 {
+        background-image: url(products-img/ropita-2.jpg);
+    }
+
+    .product-9 {
+        background-image: url(products-img/ropita-3.jpg);
+    }
+
+    .product-10 {
+        background-image: url(products-img/ropita-4.jpg);
+    }
+
+    .product-11 {
+        background-image: url(products-img/ropita-5.jpg);
+    }
+
+    .product-12 {
+        background-image: url(products-img/ropita-6.jpg);
+    }
+
+    .list .dec-1 {
         background-image: url(img/Rectangle\ 60.svg);
         background-size: cover;
         background-position: center;
@@ -518,27 +571,27 @@ header{
         grid-column: 1/3;
         grid-row: 1/3;
     }
-    
-    .list .dec-3{
-        background-color: black;
+
+    .list .dec-3 {
+        background-image: url(products-img/dec-3.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         grid-column: 1/2;
         grid-row: 1/3;
     }
-    
-    .list .dec-2{
-        background-color: rgb(100, 50, 50);
+
+    .list .dec-2 {
+        background-image: url(products-img/dec-2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         grid-column: 6/7;
         grid-row: 1/3;
     }
-    
-    .list .dec-4{
-        background-color: rgb(165, 117, 117);
+
+    .list .dec-4 {
+        background-image: url(products-img/dec-4.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -546,20 +599,20 @@ header{
         grid-row: 1/3;
     }
 
-    .howBuy{
+    .howBuy {
         height: 400px;
         background-image: url(img/Bg\ Como\ comprar-ds.svg);
     }
-    
-    .hb-img{
+
+    .hb-img {
         margin-top: 16px;
         width: 720px;
         height: 236px;
         background-image: url(img/Group\ 32.svg);
         z-index: 2;
     }
-    
-    .howBuy h2{
+
+    .howBuy h2 {
         font-size: 58px;
         line-height: 72px;
         z-index: 2;
@@ -568,27 +621,36 @@ header{
 
 }
 
+@media screen and (min-width: 890px) {
+    .products-list {
+        height: auto;
+    }
 
-@media  screen and (min-width: 890px) {
+    .section-pr-1,
+    .section-pr-2 {
+        grid-template-rows: 120px 120px;
+    }
+}
 
-    header{
+@media screen and (min-width:1000px) {
+    header {
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    .menu-display{
+    .menu-display {
         display: none;
     }
 
-    .menu-burguer{
+    .menu-burguer {
         display: none;
     }
 
-    .menu-burguer-bg{
+    .menu-burguer-bg {
         display: none;
     }
 
-    .logo-header{
+    .logo-header {
         position: absolute;
         height: 48px;
         width: 144px;
@@ -596,13 +658,13 @@ header{
         left: 66px;
     }
 
-    .nav-header{
+    .nav-header {
         display: flex;
         margin-left: 120px;
         font-weight: 600;
     }
 
-    .nav-header a{
+    .nav-header a {
         text-decoration: none;
         color: #1F1F1F;
         display: flex;
@@ -614,46 +676,38 @@ header{
         font-weight: 700;
     }
 
-    .products-list{
-        height: 648px;
+    .products-list {
+        height: auto;
     }
 
-    .section-pr-1, .section-pr-2{
-        grid-template-rows: 120px 120px;
-    }
-}
-
-@media screen and (min-width:1000px) {
-    .products-list{
-        height: 688px;
-    }
-
-    .section-pr-1, .section-pr-2{
+    .section-pr-1,
+    .section-pr-2 {
         grid-template-rows: 130px 130px;
     }
 
-    .list-header h2{
+    .list-header h2 {
         font-size: 40px;
     }
 }
 
 @media screen and (min-width:1100px) {
-    .products-list{
-        height: 728px;
+    .products-list {
+        height: auto;
     }
 
-    .section-pr-1, .section-pr-2{
+    .section-pr-1,
+    .section-pr-2 {
         grid-template-rows: 140px 140px;
     }
 }
 
 @media screen and (min-width:1200px) {
 
-    .buyNow{
+    .buyNow {
         height: 528px;
     }
 
-    .buyNow-img1{
+    .buyNow-img1 {
         position: absolute;
         right: 0;
         bottom: -108px;
@@ -665,8 +719,8 @@ header{
         background-repeat: no-repeat;
         z-index: 1;
     }
-    
-    .buyNow-img2{
+
+    .buyNow-img2 {
         position: absolute;
         right: -170px;
         top: -10px;
@@ -678,7 +732,7 @@ header{
         background-repeat: no-repeat;
     }
 
-    .buyNow-text{
+    .buyNow-text {
         height: 224px;
         width: 409px;
         top: 152px;
@@ -686,34 +740,35 @@ header{
         background-image: url(img/Regala\ algo\ único.svg);
     }
 
-    .buyNow-button{
+    .buyNow-button {
         left: 17%;
         top: 386px;
         width: 209px;
         height: 40px;
     }
-    
-    .products-list{
-        height: 768px;
+
+    .products-list {
+        height: auto;
     }
 
-    .section-pr-1, .section-pr-2{
+    .section-pr-1,
+    .section-pr-2 {
         grid-template-rows: 150px 150px;
     }
 
-    .howBuy{
+    .howBuy {
         height: 616px;
         background-image: url(img/Bg\ Como\ comprar-ds.svg);
     }
 
-    .hb-img{
+    .hb-img {
         width: 910px;
         height: 300px;
         background-image: url(img/Group\ 32.svg);
         z-index: 2;
     }
 
-    .howBuy h2{
+    .howBuy h2 {
         font-family: 'Playfair Display', serif;
         font-style: normal;
         font-weight: 600;
@@ -725,11 +780,12 @@ header{
 }
 
 @media screen and (min-width:1300px) {
-    .products-list{
-        height: 888px;
+    .products-list {
+        height: auto;
     }
 
-    .section-pr-1, .section-pr-2{
+    .section-pr-1,
+    .section-pr-2 {
         grid-template-rows: 180px 180px;
     }
 
@@ -738,17 +794,18 @@ header{
         padding-bottom: 60px;
     }
 
-    .list-header h2{
+    .list-header h2 {
         font-size: 58px;
     }
 }
 
 @media screen and (min-width:1400px) {
-    .products-list{
-        height: 1068px;
+    .products-list {
+        height: auto;
     }
 
-    .section-pr-1, .section-pr-2{
+    .section-pr-1,
+    .section-pr-2 {
         grid-template-rows: 200px 200px;
     }
 }
@@ -1436,7 +1493,7 @@ header{
     .footer-links>a>p {
         display: none;
     }
-    
+
     .news-letter {
         width: 70%;
         align-self: center;

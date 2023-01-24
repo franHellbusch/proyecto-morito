@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morito</title>
+    <!-- emailjs script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -189,27 +191,27 @@
         </div>
         <div class="contacto-formulario-container">
             <h4 class="contacto-title">Dejanos tu consulta</h4>
-            <form class="contacto-formulario">
+            <form id="contact-form" class="contacto-formulario">
                 <p>Datos personales</p>
                 <div class="input-group">
-                    <input type="text" name="name" placeholder="Nombre">
-                    <input type="text" name="lastname" placeholder="Apellido">
+                    <input type="text" name="user_name" placeholder="Nombre">
+                    <input type="text" name="user_lastname" placeholder="Apellido">
                 </div>
                 <div class="input-group">
-                    <input type="text" name="celular" placeholder="Celular">
-                    <input type="text" name="lastname" placeholder="Email">
+                    <input type="text" name="user_phone" placeholder="Celular">
+                    <input type="text" name="user_email" placeholder="Email">
                 </div>
 
                 <p>Mensaje</p>
-                <textarea name="mensaje" placeholder="Escribe tu consulta"></textarea>
+                <textarea name="message" placeholder="Escribe tu consulta"></textarea>
 
                 <div class="checkbox-group">
-                    <input type="checkbox">
+                    <input name="news_letter" id="newsLetterCheck" type="checkbox">
                     <p>Deseo recibir novedades por este e-mail</p>
                 </div>
 
                 <div class="contacto-button-container">
-                    <button>ENVIAR</button>
+                    <button type="submit" >ENVIAR</button>
                 </div>
             </form>
         </div>
@@ -262,10 +264,11 @@
             <h6>News letter</h6>
             <p>Suscríbete para recibir todas las novedades.</p>
             <input type="text" name="subcribe" placeholder="Ingresa tu mail">
-            <button>Suscribirme</button>
+            <button onclick="newsLetterSuscribe()">Suscribirme</button>
         </div>
     </footer>
 </body>
+<script src="./index.js"></script>
 <script>
 
     function openMenu(){
