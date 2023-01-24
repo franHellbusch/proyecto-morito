@@ -194,16 +194,16 @@
             <form id="contact-form" class="contacto-formulario">
                 <p>Datos personales</p>
                 <div class="input-group">
-                    <input type="text" name="user_name" placeholder="Nombre">
-                    <input type="text" name="user_lastname" placeholder="Apellido">
+                    <input type="text" name="user_name" placeholder="Nombre" required>
+                    <input type="text" name="user_lastname" placeholder="Apellido" required>
                 </div>
                 <div class="input-group">
-                    <input type="text" name="user_phone" placeholder="Celular">
-                    <input type="text" name="user_email" placeholder="Email">
+                    <input type="text" name="user_phone" placeholder="Celular" required>
+                    <input type="email" name="user_email" placeholder="Email" required>
                 </div>
 
                 <p>Mensaje</p>
-                <textarea name="message" placeholder="Escribe tu consulta"></textarea>
+                <textarea name="message" placeholder="Escribe tu consulta" required></textarea>
 
                 <div class="checkbox-group">
                     <input name="news_letter" id="newsLetterCheck" type="checkbox">
