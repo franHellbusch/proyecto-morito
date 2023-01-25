@@ -20,7 +20,7 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 4;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 
@@ -70,7 +70,6 @@ header {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    margin-top: 88px;
 }
 
 .buyNow-text {
@@ -96,7 +95,7 @@ header {
 }
 
 .buyNow-button:hover {
-    box-shadow: #1F1F1F 0px 5px 20px 0px;
+    box-shadow: #1F1F1F 0px 9px 30px -15px, #1F1F1F 0px 4px 16px -8px;
 }
 
 .buyNow-button {
@@ -424,7 +423,12 @@ header {
 
     .buyNow {
         height: 224px;
-        background-image: url('img/Group\ 14-mob.svg');
+        background-image: url('img/Group\ 14-mob.jpg');
+    }
+
+    .buyNow-img1,
+    .buyNow-img2 {
+        display: none;
     }
 
     .buyNow-text {
@@ -516,7 +520,7 @@ header {
 
     .buyNow {
         height: 360px;
-        background-image: url('img/Group\ 14-mob.svg');
+        background-image: url('img/Group\ 14-mob.jpg');
     }
 
     .buyNow-text {
@@ -589,12 +593,13 @@ header {
     }
 
     .buyNow-img1 {
+        display: block;
         position: absolute;
         right: 0;
         bottom: -70px;
         width: 380px;
         height: 330px;
-        background-image: url('img/1\ 1.svg');
+        background-image: url('img/1\ 1.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -602,17 +607,17 @@ header {
     }
 
     .buyNow-img2 {
+        display: block;
         position: absolute;
         right: -170px;
         top: -10px;
         width: 520px;
         height: 445px;
-        background-image: url('img/casa\ 1.svg');
+        background-image: url('img/casa\ 1.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
-
 }
 
 
@@ -672,6 +677,7 @@ header {
 
     .list-header h2 {
         font-family: 'Playfair Display';
+        text-align: start;
         font-style: normal;
         font-weight: 600;
         font-size: 33px;
@@ -690,7 +696,6 @@ header {
         grid-template-rows: 104px 104px 104px 104px;
         grid-row-gap: 15px;
         z-index: 3;
-        margin-bottom: 20px;
     }
 
     .section-pr-1 {
@@ -738,7 +743,7 @@ header {
     }
 
     .list {
-        margin: 0 0 15px 0;
+        margin: 0 0 45px 0;
     }
 
     .pr {
@@ -1079,7 +1084,7 @@ header {
         bottom: -108px;
         width: 680px;
         height: 576px;
-        background-image: url('img/1\ 1.svg');
+        background-image: url('img/1\ 1.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1092,7 +1097,7 @@ header {
         top: -10px;
         width: 581px;
         height: 494px;
-        background-image: url('img/casa\ 1.svg');
+        background-image: url('img/casa\ 1.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1215,6 +1220,10 @@ header {
         margin-right: 1px;
         background: #FACAAC;
         opacity: 1;
+    }
+
+    .list {
+        margin-bottom: 85px;
     }
 }
 
@@ -1806,6 +1815,9 @@ header {
 
     /* contacto */
     .contacto {
+        background-image: url(img/bg-formulario-mob.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 0;
         flex-direction: column;
     }
@@ -2016,6 +2028,9 @@ header {
 
     /* contacto */
     .contacto {
+        background-image: url(img/bg-formulario-mob.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 0;
         flex-direction: column;
     }
