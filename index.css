@@ -939,7 +939,7 @@ header {
     }
 
     .howBuy h2 {
-        font-size: 58px;
+        font-size: 33px;
         line-height: 72px;
         z-index: 2;
         margin-top: 30px;
@@ -1070,6 +1070,10 @@ header {
         margin-right: 1px;
         background: #FACAAC;
         opacity: 1;
+    }
+
+    .howBuy h2 {
+        font-size: 40px;
     }
 }
 
@@ -1708,6 +1712,11 @@ header {
     }
 
     /* contacto */
+    .contacto-title {
+        text-align: center;
+        font-size: 40px;
+    }
+
     .contacto {
         justify-content: center;
     }
