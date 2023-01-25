@@ -178,6 +178,11 @@ header {
         cursor: pointer;
     }
 
+    .menu-burguer ul li a {
+        color: #1F1F1F;
+        text-decoration: none;
+    }
+
     .menu-display {
         height: 48px;
         width: 48px;
@@ -704,7 +709,7 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-content: space-between;
         margin: 0;
         width: auto;
@@ -726,7 +731,7 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-content: space-between;
         margin: 0;
         width: auto;
@@ -742,8 +747,8 @@ header {
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        height: 47%;
-        width: 30%;
+        height: 48%;
+        width: 31%;
         margin: 0;
     }
 
